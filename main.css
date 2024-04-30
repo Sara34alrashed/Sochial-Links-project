@@ -1,0 +1,85 @@
+:root{
+
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--DarkGrey: hsl(0, 0%, 12%);
+--OffBlack: hsl(0, 0%, 8%);
+--Green: hsl(75, 94%, 57%);
+
+}
+@font-face {
+    font-family: 'font';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'font';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family:'font';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family:'font';
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'font';
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--OffBlack);
+    display: flex; /*to control the plce of all item*/
+    justify-content: center; /*x*/
+    align-items: center;/*y*/
+
+
+}
+
+body .card{
+    width: 29%;
+background-color: var(--DarkGrey);
+padding: 25px;
+border-radius: 15px;
+text-align: center;/*to keep content in the center*/
+}
+body .card .log img{
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+body .card .text :first-child{
+    color: var(--White);
+    margin: 10px 0px;
+}
+body .card .text :nth-child(2){
+    color: var(--Green);
+}
+body .card .text :nth-child(3){
+    color: var(--White);
+    margin: 25px 0px;
+}
+body .card .social a{
+    display: block; /*to make the words under each other */
+    text-decoration: none; /*to remove any decoration like a line */
+    color: var(--White);
+    margin: 25px 0px; 
+    background-color: var(--Grey);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;/*يخلي حركة الماوس على الكلمه لمده 3 ثواني*/
+}
+
+body .card .social a:hover{
+    background-color: var(--Green);
+    color: var(--OffBlack);
+
+}
